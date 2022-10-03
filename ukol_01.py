@@ -22,11 +22,11 @@ baliky = {
     "B947X": False,
 }
 
-cislo_baliku = str(input("Zadej cislo baliku:"))
+cislo_baliku = input("Zadej cislo baliku:")
 
 if cislo_baliku in baliky:
     na_sklade = baliky[cislo_baliku]
-    if na_sklade == True:
+    if na_sklade:
         print("Balik byl predan kuryrovi.")
     else:
         print("Balik zatim nebyl predan kuryrovi.")
